@@ -1,0 +1,12 @@
+runtime: php 
+env: flex 
+runtime_config: 
+    document_root: . 
+env_variables: 
+    APP_LOG: errorlog 
+    GOOGLE_STORAGE_BUCKET: "conductive-bank-265522.appspot.com" 
+    MYSQL_USER: "root" 
+    MYSQL_PASSWORD: "cs348w20" 
+    MYSQL_DSN: "mysql:dbname=cs348w20-dbsample1;unix_socket=/cloudsql/conductive-bank-265522:us-central1:cs348w20-dbsample1" 
+beta_settings: 
+    cloud_sql_instances: "conductive-bank-265522:us-central1:cs348w20-dbsample1"
