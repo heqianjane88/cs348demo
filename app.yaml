@@ -6,7 +6,7 @@ env_variables:
     APP_LOG: errorlog 
     GOOGLE_STORAGE_BUCKET: "cs348demo.appspot.com" 
     MYSQL_USER: "root" 
-    MYSQL_PASSWORD: <PASSWORD> 
+    MYSQL_PASSWORD: "<your password>" 
     MYSQL_DSN: "mysql:dbname=cs348demo-db;unix_socket=/cloudsql/cs348demo:us-central1:cs348demo-db" 
 beta_settings: 
     cloud_sql_instances: "cs348demo:us-central1:cs348demo-db"
