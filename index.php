@@ -24,15 +24,10 @@ $dbsocket = $app['connection_name'];
 
 // Create connection
 //for testing on localhost:8080
-$conn = new mysqli("127.0.0.1", $username, $password, $dbname,3306);
+//$conn = new mysqli("127.0.0.1", $username, $password, $dbname,3306);
 
 //for deployment 
-//$conn = new mysqli(null, $username, $password, $dbname, $dbport, $dbsocket);
-
-
-$conn = new mysqli($servername, $username, $password, $dbname,
-        //3306);
-        $dbport, "/cloudsql/cs348demo:us-central1:cs348demo-db");
+$conn = new mysqli(null, $username, $password, $dbname, $dbport, $dbsocket);
 
 
 // Check connection
